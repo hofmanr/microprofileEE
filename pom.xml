@@ -12,25 +12,4 @@
         <module>jtt-st</module>
     </modules>
 
-    <build>
-        <plugins>
-            <!-- Enable Liberty-maven plugin -->
-            <!-- tag::LibertyMavenPlugin[] -->
-            <plugin>
-                <groupId>io.openliberty.tools</groupId>
-                <artifactId>liberty-maven-plugin</artifactId>
-                <version>3.7.1</version>
-                <configuration>
-                    <installDirectory>/users/rinus/ws/wlp22</installDirectory>
-                    <serverName>microprofileJtt</serverName>
-                    <features>
-                        <acceptLicense>true</acceptLicense>
-                    </features>
-                    <looseApplication>true</looseApplication>
-                    <deployPackages>all</deployPackages>
-                </configuration>
-            </plugin>
-            <!-- end::LibertyMavenPlugin[] -->
-        </plugins>
-    </build>
 </project>
