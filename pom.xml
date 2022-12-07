@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <description>Jakarta EE 9.1 + MicroProfile 3.X blank template with System tests</description>
+    <groupId>nl.rhofman.mpf</groupId>
+    <artifactId>jtt-service</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>jtt</module>
+        <module>jtt-st</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <!-- Enable Liberty-maven plugin -->
+            <!-- tag::LibertyMavenPlugin[] -->
+            <plugin>
+                <groupId>io.openliberty.tools</groupId>
+                <artifactId>liberty-maven-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <installDirectory>/users/rinus/ws/wlp22</installDirectory>
+                    <serverName>microprofileJtt</serverName>
+                    <features>
+                        <acceptLicense>true</acceptLicense>
+                    </features>
+                    <looseApplication>true</looseApplication>
+                    <deployPackages>all</deployPackages>
+                </configuration>
+            </plugin>
+            <!-- end::LibertyMavenPlugin[] -->
+        </plugins>
+    </build>
+</project>
