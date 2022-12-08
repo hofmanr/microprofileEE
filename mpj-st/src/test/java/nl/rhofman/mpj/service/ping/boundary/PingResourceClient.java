@@ -1,4 +1,4 @@
-package airhacks.service.ping.boundary;
+package nl.rhofman.mpj.service.ping.boundary;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

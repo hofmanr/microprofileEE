@@ -1,4 +1,4 @@
-package airhacks.service;
+package nl.rhofman.mpj.service;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

@@ -1,4 +1,4 @@
-package airhacks.service.ping.boundary;
+package nl.rhofman.mpj.service.ping.boundary;
 import java.net.URI;
 import javax.ws.rs.core.Response;
 import org.eclipse.microprofile.rest.client.RestClientBuilder;

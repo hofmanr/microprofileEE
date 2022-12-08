@@ -1,4 +1,4 @@
-package airhacks.service.ping.boundary;
+package nl.rhofman.mpj.service.ping.boundary;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
