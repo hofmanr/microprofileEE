@@ -6,6 +6,6 @@
         version = "5.0"
         metadata-complete = "false"
 >
-    <display-name>JTT</display-name>
-    <description>Jakarta Tech Talks</description>
+    <display-name>MPJ</display-name>
+    <description>MicroProfile Jakarta EE</description>
 </web-app>

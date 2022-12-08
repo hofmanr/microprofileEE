@@ -51,7 +51,7 @@
                 <version>3.7.1</version>
                 <configuration>
                     <installDirectory>/users/rinus/ws/wlp22</installDirectory>
-                    <serverName>microprofileJtt</serverName>
+                    <serverName>microprofileEE</serverName>
                     <features>
                         <acceptLicense>true</acceptLicense>
                     </features>
