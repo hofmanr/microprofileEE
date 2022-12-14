@@ -4,6 +4,7 @@
     <!--The Liberty Maven Plugin has generated Liberty features necessary for your application in configDropins/overrides/generated-features.xml-->
     <featureManager>
         <feature>microProfile-5.0</feature>
+        <feature>beanValidation-3.0</feature>
 <!--        <feature>webProfile-9.1</feature>-->
 <!--        <feature>jakartaee-9.1</feature>-->
     </featureManager>

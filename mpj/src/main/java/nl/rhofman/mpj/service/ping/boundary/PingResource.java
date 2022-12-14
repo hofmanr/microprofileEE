@@ -1,6 +1,7 @@
 package nl.rhofman.mpj.service.ping.boundary;
 
 import jakarta.inject.Inject;
+import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -25,7 +26,7 @@ public class PingResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void save(Ping ping) {
+    public void save(@Valid Ping ping) {
         System.out.println("---ping " + ping);
     }
 

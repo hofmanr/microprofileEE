@@ -11,3 +11,9 @@ Switch to the "-st" module and perform:
 ```
 mvn compile failsafe:integration-test
 ```
+
+# Commands
+Command for posting a ping:
+```
+$ curl -XPOST -H"Content-type: application/json" -d'{"latency":13,"name":"juke"}' -i localhost:9080/mpj/api/ping
+```
