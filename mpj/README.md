@@ -1,3 +1,21 @@
+# Start the App
+Create a new Liberty instance
+```
+mvn liberty:create
+```
+
+Run de app:
+Create a new Liberty instance
+```
+mvn clean package liberty:run
+```
+
+Run the app in develop mode:
+```
+mvn clean package liberty:dev
+```
+This supports live coding
+
 # Build
 ```
 mvn clean package && docker build -t nl.rhofman.mpj/mpj .
@@ -15,5 +33,5 @@ mvn compile failsafe:integration-test
 # Commands
 Command for posting a ping:
 ```
-$ curl -XPOST -H"Content-type: application/json" -d'{"latency":13,"name":"juke"}' -i localhost:9080/mpj/api/ping
+curl -XPOST -H"Content-type: application/json" -d'{"latency":13,"name":"juke"}' -i localhost:9080/mpj/api/ping
 ```
