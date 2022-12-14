@@ -5,6 +5,7 @@
     <featureManager>
         <feature>microProfile-5.0</feature>
         <feature>beanValidation-3.0</feature>
+        <feature>enterpriseBeansLite-4.0</feature>
 <!--        <feature>webProfile-9.1</feature>-->
 <!--        <feature>jakartaee-9.1</feature>-->
     </featureManager>
