@@ -5,6 +5,7 @@ import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.eclipse.microprofile.metrics.annotation.Timed;
 
 /**
  *
@@ -17,6 +18,7 @@ public class PingResource {
     @ConfigProperty(name = "message")
     String message;    
 
+    @Timed(name = "get_ping", absolute = true)
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Ping ping() {
