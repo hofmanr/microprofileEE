@@ -9,7 +9,7 @@ import org.eclipse.microprofile.metrics.annotation.Timed;
 
 /**
  *
- * @author airhacks.com
+ * @author rhofman
  */
 @Path("ping")
 public class PingResource {

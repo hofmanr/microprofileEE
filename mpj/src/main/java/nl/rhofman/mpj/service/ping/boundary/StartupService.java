@@ -8,7 +8,7 @@ import jakarta.ejb.Startup;
 @Startup
 public class StartupService {
 
-    // Usable with MicroProfile and Jakarta EE
+    // PostConstruct is possible with MicroProfile and Jakarta EE
     @PostConstruct
     public void initOnStart() {
         System.out.println("StartupService.initOnStart()");

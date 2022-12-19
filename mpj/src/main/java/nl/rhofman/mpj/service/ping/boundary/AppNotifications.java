@@ -5,6 +5,7 @@ import jakarta.ejb.Schedule;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
 import jakarta.inject.Inject;
+import jakarta.websocket.OnClose;
 import jakarta.websocket.OnMessage;
 import jakarta.websocket.OnOpen;
 import jakarta.websocket.Session;
@@ -40,10 +41,16 @@ public class AppNotifications {
         System.out.println("AppNotifications.onConnect() " + session);
     }
 
+    @OnClose
+    public void onClose(Session session) {
+        System.out.println("AppNotifications.onClose() " + session);
+        this.session = Optional.empty();
+    }
+
     @OnMessage
     public void onMessage(String message) {
         // To send messages back
-        this.session.map(Session::getAsyncRemote).ifPresent(r -> r.sendText("echo " +message));
+        this.session.map(Session::getAsyncRemote).ifPresent(r -> r.sendText("echo " + message));
     }
 
     // Every hour, minute and every 5 seconds

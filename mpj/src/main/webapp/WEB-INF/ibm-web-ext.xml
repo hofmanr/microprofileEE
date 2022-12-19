@@ -6,6 +6,6 @@
 
     <context-root uri="/mpj"/>
     <enable-directory-browsing value="false"/>
-    <enable-file-serving value="false"/>
+    <enable-file-serving value="true"/>
     <enable-reloading value="true"/>
 </web-ext>
