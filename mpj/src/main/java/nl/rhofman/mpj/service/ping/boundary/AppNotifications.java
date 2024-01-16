@@ -59,7 +59,7 @@ public class AppNotifications {
         registry.counter("broadcasting_to_listeners").inc();
         System.out.println("AppNotifications.sendPing() " + System.currentTimeMillis());
 
-        if (!session.isEmpty()) {
+        if (session.isPresent()) {
             registry.counter("send_alive_messages").inc();
             this.session.map(Session::getAsyncRemote).ifPresent(r -> r.sendText("ping " + LocalDateTime.now()));
         }
