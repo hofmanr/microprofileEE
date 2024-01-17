@@ -7,7 +7,7 @@ import jakarta.ws.rs.core.Application;
  * Configures a JAX-RS endpoint. Delete this class, if you are not exposing
  * JAX-RS resources in your application.
  *
- * @author airhacks.com
+ * @author Rinus Hofman
  */
 @ApplicationPath("api")
 public class JAXRSConfiguration extends Application {

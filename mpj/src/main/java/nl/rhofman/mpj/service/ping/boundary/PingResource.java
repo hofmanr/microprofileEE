@@ -27,6 +27,7 @@ public class PingResource {
 //        return this.message + " Jakarta EE 9 with MicroProfile 5!";
     }
 
+    // Valid is BeanValidation and belongs to Jakarta EE and not MicroProfile; Quarkus also supports BeanValidation
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void save(@Valid Ping ping) {
