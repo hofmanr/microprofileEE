@@ -15,6 +15,7 @@
         <feature>beanValidation-3.0</feature>
         <feature>enterpriseBeansLite-4.0</feature>
         <feature>websocket-2.0</feature>
+        <feature>appSecurity-4.0</feature> <!-- Authentication / CustomAuthentication -->
 <!--        <feature>webProfile-9.1</feature>-->
 <!--        <feature>jakartaee-9.1</feature>-->
 
